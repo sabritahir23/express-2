@@ -1,2 +1,2 @@
-# express-2
-v2 of our express app uses EJS templates
+# express-1
+Our first express.js app
