@@ -4,10 +4,13 @@ var data = require('./data/test.json');
 var app = express();
 const PORT = 3000;
 
-//this is how a route is built in Express
+app.set('view engine','ejs'); //sent views to EJS
+
+//this is how route is built in Express
 app.get('/', (req,res)=>{
-//res.send(`App is running on port ${PORT}`);
-  res.json(data);
+  //res.send(`App is running on port ${PORT}`);
+//res.json(data);
+  res.render('pages/index');
 });
 
 app.listen(PORT,()=>{
